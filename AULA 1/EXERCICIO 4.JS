@@ -2,17 +2,17 @@ const prompt = require("prompt-sync")();
 console.clear()
 
 
-let num1 = +prompt('Digite um número: ');
-// let num2 = +prompt('Nota 2: ');
+let num1 = +prompt('Digite o primeiro número: ');
+let num2 = +prompt('Digite o segundo número: ');
 // let num3 = +prompt('Nota 3: ');
 // let num4 = +prompt('Nota 4: ');
 // let media = ((num1+num2+num3+num4)/4);
 // console.log('Sua média é: ', media)
 
-if ( num1 % 2 == 0 ){
-     console.log('O numero é par')
+if ( num1 % num2 === 0 ){
+     console.log('Os numeros são multiplos')
 } else {
-     console.log('O numero é impar')
+     console.log('Os numeros não são multiplos')
 
 }
 
